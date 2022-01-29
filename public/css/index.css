@@ -1,0 +1,450 @@
+body {
+  background-color: #f2f2f2;
+  min-width: 350px;
+  font-family: "Open Sans", sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* || Top Level Section Styes */
+nav {
+  padding: 20px 40px;
+  background-color: #333333;
+  color: white;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  margin: auto;
+  padding: 0px 40px;
+}
+
+main {
+  margin: auto;
+  padding: 40px;
+  max-width: 1220px;
+}
+
+footer {
+  min-height: 100px;
+}
+
+/* || Header Section Styles */
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  padding-top: 50px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: bolder;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+#workoutImage {
+  max-width: 70%;
+  align-self: flex-end;
+}
+
+/* || Container Styling */
+.main-container + .main-container {
+  padding-top: 40px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  min-height: 180px;
+  border-radius: 40px;
+}
+
+#past-activity .content-container {
+  background-color: #53e0cd;
+}
+
+#future-activity .content-container {
+  background-color: #b1bab9;
+}
+
+.container-title {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-bottom: 0.6rem;
+}
+
+/* || Start Form Styles */
+#pAct-Add p,
+#fAct-Add p {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.addBtn {
+  color: black;
+  background-color: #fff;
+  font-weight: bold;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* || Form Styles */
+.form-label {
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.pseudoform {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+label,
+.form-label,
+.form-button {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  height: 20px;
+  padding: 10px;
+  font-weight: normal;
+}
+
+select {
+  height: 40px;
+  font-weight: normal;
+  padding: 0 10px;
+}
+
+#activity-for-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#activity-for-wrapper > .form-label {
+  padding-bottom: 10px;
+}
+
+#scalar-unit-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+}
+
+#label-scalar,
+#label-units {
+  flex: 1;
+}
+
+#label-scalar > input,
+#label-units > input {
+  width: 80%;
+}
+
+/* || Remove Calendar logo */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.form-button {
+  align-self: center;
+  color: white;
+  background-color: #333333;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  label,
+  .form-label,
+  .form-button {
+    margin: 10px 15px;
+  }
+  .form-button {
+    align-self: flex-end;
+    margin: 10px 30px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #workoutImage {
+    position: absolute;
+    right: 0;
+    max-height: 350px;
+  }
+
+  label,
+  .form-label {
+    margin: 10px 20px;
+  }
+  .form-button {
+    margin: 10px 30px;
+  }
+}
+
+/* Tutor Code Stops Here */
+
+#reminder{
+    display: flex;
+    background-color: rgb(97,75,227);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+    #reminder{
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+} 
+
+#word-reminder{
+    font-style: italic;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    #word-reminder{
+        font-size: 12px;
+    }
+}
+
+#question{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    margin-left: 5%;
+    
+}
+
+@media only screen and (max-width: 480px) {
+    #question{
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #question{
+        font-size: 14px;
+    }
+}
+
+#yes{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 10%;
+}
+
+@media only screen and (max-width: 480px) {
+    #yes{
+        font-size: 14px;
+    }
+}
+
+#no {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 10%;
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 480px) {
+    #no{
+        font-size: 14px;
+    }
+}
+
+#progress {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    #progress{
+        font-size: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+#overlay-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#overlay-fg {
+  background-color: rgba(242, 242, 242, 1.0);
+  padding: 15px;
+  height: auto;
+  min-height: 300px;
+  max-width: 800px;
+  width: 80%;
+}
+
+/*@media only screen and (max-width: 480px) {
+    #overlay-fg{
+
+    }
+}*/
+
+#overlay-exit-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#overlay-exit-img {
+  width: 15px;
+  height: 15px;
+  align-self: flex-end;
+}
+
+#overlay-controls {
+  display: flex;
+  width: 90%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#controls-1 {
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#controls-2 {
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#controls-t1 {
+  display: inline-block;
+  font-weight: 700;
+}
+
+#controls-t2 {
+  display: inline-block;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+    #controls-t1 {
+      font-size: 12px;
+    }
+    #controls-t2 {
+      font-size: 12px;
+    }
+}
+
+#controls-i1 {
+  display: inline-block;
+}
+
+#controls-i2 {
+  display: inline-block;
+}
+
+#chart-anchor-container {
+  width: 100%;
+  flex: 1;
+}
+
+#everything-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /*padding: 5%;*/
+  /*margin: -18px;
+  margin-left: -1px; */
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay-fg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
